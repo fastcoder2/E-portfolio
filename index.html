@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamad Alo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="model--open">
+    <section onmousemove="moveBackground(event)">
+        <!--NavBar-->
+        <div class="navbar">
+            <div class="container flex">
+                <h1 class="logo">Alo</h1>
+                <nav>
+                    <ul class="nav__link--list">
+                        <li class="nav__link" onclick="toggelModal()">
+                            <a href="#about-me" class="
+                            nav__link--anchor
+                            link__hover-effect
+                            link__hover-effect--black
+                            ">About</a>
+                        </li>
+
+                        <li class="nav__link"><a href="#languages"
+                            class="
+                            nav__link--anchor
+                            link__hover-effect
+                            link__hover-effect--black
+                            ">Languages</a>
+                        </li>
+
+                        <li class="nav__link" onclick="toggleModal()">
+                            <a href="#" class="
+                            navlink-button 
+                            navlink-button-primary
+                            ">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!--showcase-->
+        <section class="showcase">
+            <div class="container grid">
+                <div class="both-titles-and-p">
+                <h1 class="title1">Hey!</h1>
+                <h1 class="title2 orange">I'm Mohamad <span class="wave">👋</span></h1>
+                <p>I'm a 14 year old
+                    <b class="orange">Frontend Software Engineer</b>
+                    with a strong passion for building web applications with great user experiences.
+                    Here's a bit more
+                    <b class="orange click" a href="#about-me">about me.</b>
+                </p>
+                </div>
+                <img src="images/IMG_3623.jpeg" class="img-me">
+            </div>
+        </section>
+
+        <!--About-->
+        <section class="about">
+            <div class="container grid">
+                <div class="image-container2">
+                    <div class="image-container">
+                        <img src="images/Hamoude.jpeg" class="image2" id="about-me">
+                    </div>
+                </div>
+                <div>
+                    <h1 class="about-me-title orange">
+                        About me
+                    </h1>
+                    <h2 class="about-h1 block">
+                        So as i've already mentioned, i'm a highly motivated software engineer with a strong passion for website development.
+                    </h2>
+                    <p class="block">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam officiis totam natus. Autem quasi nemo dolorem aspernatur placeat consequuntur totam ratione et voluptatum quisquam possimus id ipsa dolorum dicta tenetur iusto, commodi quod sint saepe rerum optio.
+                        Veritatis, consequatur. Ipsa optio numquam, fugiat nulla architecto provident accusamus. Magni animi nisi iusto cum quae labore, obcaecati recusandae laboriosam molestiae harum ex?
+                    </p>
+                </div>
+            </div>
+
+            <div style="text-align:center">
+                <a href="https://github.com/fastcoder2" target="blank__"><i class="fab fa-github fa-2x social"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100010416033884" target="blank__"><i class="fab fa-facebook fa-2x social"></i></a>
+                <a href="https://www.instagram.com/mohamad._.alo/" target="blank__"><i class="fab fa-instagram fa-2x social"></i></a>
+                <a href="https://twitter.com/BilkaGFX" target="blank__"><i class="fab fa-twitter fa-2x social"></i></a>
+            </div>
+        </section>
+
+        <!--Languages -->
+        <section class="languages">
+            <div class="container grid">
+                <div>
+                    <h1 class="languages-h1 orange" id="languages">
+                        Languages
+                    </h1>
+                    <h2>Languages that i've worked with.</h2>
+                </div>
+                <div class="language-cards">
+                    <div class="card block">
+                        <img src="images/css.png" alt="">
+                    </div>
+                    <div class="card block">
+                        <img src="images/html.png" alt="">
+                    </div>
+                    <div class="card block">
+                        <img src="images/js 2.webp" >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Contact-->
+
+        <div class="modal">
+            <div class="modal__half modal__about">
+                <img src="images/vector 2.png" class="hexa-image">
+            </div>
+
+            <div class="modal__half modal__contact">
+                <i class="fas fa-times modal__exit click" onclick="toggleModal()" aria-hidden="true"></i>
+                <h3 class="modal__title modal__title--contact">
+                    Let's have a chat!
+                </h3>
+                <h3 class="modal__sub-title modal__sub-title--contact">
+                    I'm currently open to new opportunities.
+                </h3>
+                <form id="contact__form" onsubmit="contact()">
+                    <div class="form__item">
+                        <label class="form__item--label">Name</label>
+                        <input class="input" name="user_name" type="text" required="">
+                    </div>
+                        
+                    <div class="form__item">
+                        <label class="form__item--label">Email</label>
+                        <input type="email" class="input" name="user_email" required></input>
+                    </div>
+
+                    <div class="form__item">
+                        <label class="form__item--label">Message</label>
+                        <textarea type="text" class="input" name="message" required></textarea>
+                    </div>
+
+                    <button id="contact__submit" class="form__submit">
+                        Send it my way!
+                    </button>
+                </form>
+
+                <div class="modal__overlay modal__overlay--loading">
+                    <i class="fas fa-spinner" aria-hidden="true"></i>
+                </div>
+
+                <div class="modal__overlay modal__overlay--success">
+                    Thanks for the message! Looking forward to speaking to you soon.
+                </div>
+            </div>
+        </div>
+        <img src="./images/semi circle.svg" class="shape shape--0">
+            <img src="./images/circle.svg" class="shape shape--1">
+            <img src="./images/squiggly.svg" class="shape shape--2">
+            <img src="./images/circle.svg" class="shape shape--3">
+            <img src="./images/triangle.svg" class="shape shape--4">
+            <img src="./images/circle.svg" class="shape shape--5">
+            <img src="./images/squiggly.svg" class="shape shape--6">
+            <img src="./images/circle.svg" class="shape shape--7">
+            <img src="./images/semi circle.svg" class="shape shape--8">
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row footer__row">
+                    <a href="#" class="footer__anchor">
+                        <figure class="footer__logo">
+                          <h1 class="footer__logo--img">Alo</h1>
+                        </figure>
+                        <span class="footer__logo--popper">
+                          Top
+                          <i class="fas fa-arrow-up"></i>
+                        </span>
+                      </a>
+                </div>
+                <div class="social-footer">
+                    <a href="https://www.instagram.com/mohamad._.alo/" class="
+                    social-footer
+                    link__hover-effect 
+                    link__hover-effect--white
+                    "> 
+                        Instagram
+                    </a>
+                    
+                    <a href="https://www.facebook.com/profile.php?id=100010416033884" target="blank__" class="
+                    social-footer
+                    link__hover-effect 
+                    link__hover-effect--white
+                    "> 
+                        Facebook
+                    </a>
+                    <a href="https://github.com/fastcoder2" class="
+                    social-footer 
+                    link__hover-effect 
+                    link__hover-effect--white
+                    "> 
+                        Github
+                    </a>
+
+                    <a href="#" onclick="toggleModal()" class="
+                    social-footer 
+                    link__hover-effect 
+                    link__hover-effect--white
+                    "> 
+                        Contact
+                    </a>
+                </div>
+                <div class="footer__copyright">Copyright &copy; 2022 Mohamad Alo</div>
+            </div>
+        </footer>
+</section>
+</body>
+</html>
