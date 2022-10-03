@@ -66,7 +66,7 @@ img{
 
 .row {
     width: 100%;
-    max-width: 1100px;
+    max-width: 1200px (wyw);
     margin: 0 auto;
     padding: 0 12px;
 }
@@ -657,22 +657,63 @@ footer{
 
 /* Small phones, tablets, large smart phones */
 @media (max-width: 768px){
+     /* Navbar */ 
+     .logo{
+        display:block;
+        font-size:40px;
+    }
+    .navbar a{
+        font-size:17px;
+    }
+    /* Showcase */
     .showcase{
+        position:relative;
         flex-direction: column;
     }
-
-    .about{
-        margin-top:600px;
+    .title1{
+        padding-left:5%;
+        margin-bottom:0
     }
-
-    .languages{
-        margin-top:450px;
+    .title2{
+        margin-top:180px;
+        padding-left:5%;
+    }
+    .showcase p{
+        margin-top:300px;
+        margin-bottom:50px;
+        font-size:20px;
+        padding-left:5%;
+    }
+    .showcase h1{
+        font-size:55px;
+    }
+    .img-me{
+        padding-left:5%;
+        margin:0;
+        width:100%;
+    }
+    /* About-me */
+    .about{
+        margin-top:630px;
     }
     
-    p{
-        font-size:20px;
-
+    .about h2{
+        font-size:27px;
+        padding-left:10px;
     }
+
+    .about p{
+        justify-content: center;
+        padding-left:10px;
+    }
+
+    /* Langeuages */
+    .languages{
+        margin-top:450px;
+        margin-bottom:200px;
+    }
+
+    /* Contact */ 
     .modal {
         top: 0;
         left: 0;
@@ -681,12 +722,18 @@ footer{
         width: 100%;
         flex-direction: column-reverse;
         border-radius: 0;
-      }
-      .modal__half {
+    }
+
+    .modal__half {
         width: 100%;
     }
-    .showcase h1{
-        font-size:55px;
+
+    /* Footer */
+    .footer .container{
+        margin-bottom: 500px;;
+    }
+    .social-footer{
+        font-size:14px;
     }
 }
 
@@ -707,7 +754,7 @@ footer{
         text-align: center;
     }
     .title1{
-        margin-left:130px;
+        margin-left:35%;
         margin-bottom:0
     }
     .title2{
@@ -747,7 +794,7 @@ footer{
     }
 
     .card{
-        margin-left:110px;
+        margin-left:110%;
         width:150px;
     }
 
