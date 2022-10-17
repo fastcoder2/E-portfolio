@@ -233,12 +233,12 @@ input:focus, textarea:focus {
     float:inline-start;
 }
 
-.container-2{
+/* .container-2{
     max-width:100%;
     margin:10px auto;
     overflow:auto;
     padding: 0 10px;
-}
+} */
 .img-me{
     position:relative;
     width:100%;
@@ -258,12 +258,12 @@ input:focus, textarea:focus {
           margin:0 0 100px 30px;
           margin-top:100px;
         }
-        .container-2{
+        /* .container-2{
             max-width:100%;
             margin:10px auto;
             overflow:auto;
             padding: 0 10px;
-        }
+        } */
         .showcase h1{
             position:absolute;
         }
@@ -687,6 +687,28 @@ footer{
     }
 }
 
+@media (max-width: 1100px){
+    .showcase h1{
+        position:relative;
+        font-size:55px;
+        text-align: center;
+    }
+    .title2{
+        margin-top:0;
+    }
+    .showcase p{
+        max-width:1200px;
+        position:relative;
+        text-align: center;
+        margin: 0;
+    }
+    .img-me{
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+}
 /* tablets and under */
 @media only screen and (max-width: 768px){
     /* Navbar */
