@@ -663,6 +663,9 @@ footer{
         color:rgb(0, 0, 0);
         line-height: 1.2em;
     }
+}
+
+@media (max-width: 1100px){
     .modal {
         top: 0;
         left: 0;
@@ -675,9 +678,6 @@ footer{
     .modal__half {
         width: 100%;
     }
-}
-
-@media (max-width: 1100px){
     .showcase h1{
         position:relative;
         font-size:55px;
