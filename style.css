@@ -189,7 +189,6 @@ input:focus, textarea:focus {
     margin:0 12px;
 }
 
-
 /* Showcase */
 
 .showcase{
@@ -670,6 +669,10 @@ footer{
 
 /* desktop, large screens */
 @media (max-width: 1200px){
+    .about{
+        position: relative;
+        text-align: center;
+    }
     .modal {
         top: 0;
         left: 0;
