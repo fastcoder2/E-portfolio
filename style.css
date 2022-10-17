@@ -796,6 +796,9 @@ footer{
         margin:0;
         margin-right:12px;
     }
+    .languages{
+        margin-top:610px;
+    }
     .languages .card{
         width:calc(100%/3);
     }
