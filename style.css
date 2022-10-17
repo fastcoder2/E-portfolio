@@ -65,7 +65,6 @@ img{
 
 .row {
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
     padding: 0 12px;
 }
@@ -235,12 +234,6 @@ input:focus, textarea:focus {
     float:inline-start;
 }
 
-/* .container-2{
-    max-width:100%;
-    margin:10px auto;
-    overflow:auto;
-    padding: 0 10px;
-} */
 .img-me{
     position:relative;
     width:100%;
@@ -260,12 +253,6 @@ input:focus, textarea:focus {
           margin:0 0 100px 30px;
           margin-top:100px;
         }
-        /* .container-2{
-            max-width:100%;
-            margin:10px auto;
-            overflow:auto;
-            padding: 0 10px;
-        } */
         .showcase h1{
             position:absolute;
         }
@@ -283,14 +270,12 @@ input:focus, textarea:focus {
 /* About Me */
 
 .about{
-    max-width: 1500px;
-    height: 400px;
+    height:400px;
     margin:0px 0 0 0;
     text-align:left;
     color:rgb(0, 0, 0);
     line-height: 1.2em;
 }
-
 .image2{
     width:100%;
     transform: scale(1);
@@ -771,7 +756,7 @@ footer{
     
     /* languages */
     .languages{
-        margin-top:750px;
+        margin-top:530px;
     }
     .language-cards{
         display:flex;
