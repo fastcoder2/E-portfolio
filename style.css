@@ -192,6 +192,8 @@ input:focus, textarea:focus {
 /* Showcase */
 
 .showcase{
+    min-height: 400px;
+    max-height: 600px;
     color:rgb(0, 0, 0);
     position:relative;
 }
