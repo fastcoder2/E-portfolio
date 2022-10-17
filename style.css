@@ -332,7 +332,6 @@ input:focus, textarea:focus {
     padding:20px;
     margin:10px;
     width:250px;
-    
 }
 
 .languages{
@@ -760,7 +759,11 @@ footer{
     }
     .language-cards{
         display:flex;
+        flex-wrap:wrap;
         margin: 0 auto;
+    }
+    .card{
+        width:calc(100%/3);
     }
     /* contact */
     .modal {
@@ -792,5 +795,8 @@ footer{
         font-size:15px;
         margin:0;
         margin-right:12px;
+    }
+    .card{
+        width:calc(100%/3);
     }
 }
