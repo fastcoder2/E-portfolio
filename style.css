@@ -653,10 +653,10 @@ footer{
     opacity: 1;
 }
 
-/* desktop, large screens */
-@media (max-width: 2000px){
+/* desktop */
+@media (max-width: 3000px){
     .about{
-        max-width: 1500px;
+        max-width: 3000px;
         height: 400px;
         margin:150px 0 0 0;
         text-align:left;
