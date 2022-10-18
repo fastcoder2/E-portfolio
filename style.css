@@ -756,6 +756,7 @@ footer{
     /* languages */
     .languages{
         margin-top:590px;
+        height:auto;
     }
     .language-cards{
         display:flex;
